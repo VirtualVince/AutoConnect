@@ -1,12 +1,11 @@
 import "./globals.css";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "AutoConnect",
-  description: "Created by Virtual Vince",
+  description:
+    "Streamline your car rental experience. Created by Virtual Vince",
 };
 
 export default function RootLayout({
@@ -16,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={"relative"}>{children}</body>
     </html>
   );
 }
